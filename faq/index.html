@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Extra</title>
+	<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+      
+  <link href="css/style.css" rel="stylesheet">
+    
+        <link href="css/style-color.css" rel="stylesheet">
+ 
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+<!-- stylesheets -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font_icon/css/pe-icon-7-stroke.css">
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="ionicons.min.css">
+        <!-- google fonts -->
+
+
+<style>
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+
+
+
+	
+#im:hover{
+	transition: linear all 0.3s;
+	transform: scale(1.1,1.1);
+	opacity: 0.5;
+}
+#hello1 {
+	background: #0da4e0;
+	height: 5px;
+}
+
+#n ul li :hover{
+	background: #0da4e0;
+	transition: all ease-in-out 0.40s;
+}
+ {
+	margin: 0;
+	padding: 0;
+	background:#262626; 
+}
+
+.rating
+{
+	position: absolute;
+	top: 30%;
+	left: 50%; 
+	transform: translate(-50%,-50%)  rotateY(180deg);
+	display: flex;
+}
+
+.rating input{
+	display: none;
+}
+
+.rating label
+{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	
+}
+
+.rating label:before
+{
+	 content: '\f005';
+	 font-family: fontawesome;
+	 position: relative;
+	 display: block;
+	 font-size: 50px;
+	 color: #101010;
+}
+
+.rating label:after
+{
+	 content: '\f005';
+	 font-family: fontAwesome;
+	 position: absolute;
+	 display: block;
+	 font-size: 50px;
+	 color: #1f9cff;
+	 top: 0;
+	 opacity: 0;
+	 transition: .5s;
+	 text-shadow: 0 2px 5px rgba(0,0,0,.5); 
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+	opacity: 1;
+}
+
+
+
+
+.containerr{
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.accordion-item{
+	background-color: #283042;
+	border-radius: .4rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+	font-size: 1.6rem;
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+	background-color: #283042;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+
+}
+
+
+.accordion-link i{
+	color: #e7d5ff;
+	padding: -5rem;
+}
+.accordion-link .ion-md-remove{
+	display: none;
+}
+
+.answer{
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: #212828;
+	transition: max-height 650ms;
+}
+
+.answer::before{
+	content: "";
+	position: absolute;
+	width: .6rem;
+	height: 90%;
+	background-color: #8fc460;
+	top:50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.answer p{
+	color: rgba(255,255,255,.6);
+	font-size: 1.4rem;
+	padding: 2rem;
+}
+.accordion-item:target .answer{
+	max-height: 20rem;
+}
+.according-item:target .according-link .ion-md-add{
+	display: none;
+}
+
+.according-item:target .according-link .ion-md-remove{
+	display: block;
+}
+
+</style>
+
+</head>
+
+
+<body>
+	
+
+
+
+ <body id="body">
+        
+        <!-- Header area -->
+        <header id="header">
+            <div class="center text-center">
+                <h1 class="bigheadline">Tech Support</h1>
+                <h4 class="subheadline">Answers</h4>
+            </div>
+            <div class="bottom">
+                <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
+            </div>
+        </header>
+
+        <!-- Navigation area -->
+        <section id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="logo"><a data-scroll href="#body" class="logo-text">Find</div>
+                    </div>
+                    
+                </div>
+            </div>            
+        </section>
+        
+        <!-- Content Area -->
+
+        <!-- services section -->
+        <section id="services" class="service-area">
+            <div class="containerr">
+                <h2 class="block_title">Always With You</h2>
+                <div class="row">
+                    
+                    <section>
+		<div class="containerr">
+			<div class="accordion">
+				<div class="accordion-item" id="question1">
+					<a class="accordion-link" href="#question1">
+					Aws Dcumentation Link
+					<i class="icon ion-md-add"></i>
+					<i class="icon ion-md-remove"></i>
+				</a>
+				<div class="answer">
+					<p>
+					https://github.com/expertfocus-devops/aws-sa-associate-saac02
+				</p>
+				</div>
+				</div>
+
+				<div class="accordion-item" id="question2">
+					<a class="accordion-link" href="#question2">
+					Machine learning and deep learning project
+					<i class="icon ion-md-add"></i>
+					<i class="icon ion-md-remove"></i>
+				</a>
+				<div class="answer">
+					<p>
+					https://ieeexplore.ieee.org/document/9357160
+				</p>
+				</div>
+				</div>
+
+				<div class="accordion-item" id="question3">
+					<a class="accordion-link" href="#question3">
+					Tech blogs
+					<i class="icon ion-md-add"></i>
+					<i class="icon ion-md-remove"></i>
+				</a>
+				<div class="answer">
+					<p>
+					https://techsliit.blogspot.com/
+				</p>
+				</div>
+				</div>
+
+				
+				
+			</div>
+			
+		</div>
+
+
+	</section>
+                    
+                </div>
+            </div>
+        </section><!-- services -->
+
+
+    
+							<footer>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="copyright-brief">
+											<p>Copyright &copy; <a href="">Ashan Pro</a> All right reserved</p>
+										</div>
+									</div>
+									
+							</footer>
+							<!-- footer end -->
+
+							<!-- Scroll to top -->
+							<span class="totop"><a href="../index.html"><i class="fa fa-chevron-up fa-lg"></i></a></span>
+
+						</div>
+        
+        <script src="assets/js/script.js"></script>
+
+
+<!--end footer-->
+</body>	
+
+</html>
